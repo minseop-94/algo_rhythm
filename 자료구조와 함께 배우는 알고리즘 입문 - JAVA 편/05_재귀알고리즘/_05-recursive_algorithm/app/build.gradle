@@ -17,6 +17,10 @@ repositories {
 }
 
 dependencies {
+    // https://mvnrepository.com/artifact/org.projectlombok/lombok
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.24'
+
+
     // Use JUnit Jupiter for testing.
     testImplementation 'org.junit.jupiter:junit-jupiter:5.7.2'
 
@@ -26,7 +30,7 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = '_05.recursive_algorithm.App'
+    mainClass = '_05.recursive_algorithm_analysis.App'
 }
 
 tasks.named('test') {
